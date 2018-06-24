@@ -27,12 +27,21 @@ class ViewController: UIViewController {
         redView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         */
         
+        /*
         redView.anchor(top: view.safeAreaLayoutGuide.topAnchor,
                        leading: view.leadingAnchor,
                        bottom: view.safeAreaLayoutGuide.bottomAnchor,
                        trailing: view.trailingAnchor,
                        padding: .init(top: 0, left: 16, bottom: 0, right: 16),
                        size: .init(width: 100, height: 100))
+        */
+        redView.anchor(top: view.safeAreaLayoutGuide.topAnchor,
+                       leading: nil,
+                       bottom: nil,
+                       trailing: view.trailingAnchor,
+                       padding: .init(top: 0, left: 16, bottom: 0, right: 16),
+                       size: .init(width: 100, height: 100))
+        
     }
     
 }
