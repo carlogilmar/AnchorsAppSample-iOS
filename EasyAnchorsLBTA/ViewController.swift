@@ -16,9 +16,19 @@ class ViewController: UIViewController {
         
         let redView = UIView()
         redView.backgroundColor = .red
-        view.addSubview(redView)
         
-        //enables autolayout
+        let blueView = UIView()
+        blueView.backgroundColor = .blue
+        
+        let greenView = UIView()
+        greenView.backgroundColor = .green
+        
+        //Pro tip
+        //view.addSubview(redView)
+        //view.addSubview(blueView)
+        [redView, blueView, greenView].forEach { view.addSubview($0) }
+        
+        //enables autolayout a manita
         /*
         redView.translatesAutoresizingMaskIntoConstraints = false
         redView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -41,6 +51,10 @@ class ViewController: UIViewController {
                        trailing: view.trailingAnchor,
                        padding: .init(top: 0, left: 16, bottom: 0, right: 16),
                        size: .init(width: 100, height: 100))
+        
+        blueView.anchor(top: redView.bottomAnchor, leading: nil, bottom: nil, trailing: redView.trailingAnchor, padding: .init(top: 12, left: 0, bottom: 0, right: 0), size: .init(width: 100, height: 100))
+        
+        greenView.anchor(top: redView.topAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: blueView.bottomAnchor, trailing: redView.leadingAnchor, padding: .init(top: 0, left: 12, bottom: 0, right: 12))
         
     }
     
