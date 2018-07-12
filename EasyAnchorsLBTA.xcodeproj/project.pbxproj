@@ -13,9 +13,11 @@
 		3D5ED67520DF558C00F80818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED67420DF558C00F80818 /* Assets.xcassets */; };
 		3D5ED67820DF558C00F80818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5ED67620DF558C00F80818 /* LaunchScreen.storyboard */; };
 		3D616FAA20F6E9CC00C44E11 /* LearningController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D616FA920F6E9CC00C44E11 /* LearningController.swift */; };
+		F88CEF8CE00F853EA5DA1A69 /* Pods_EasyAnchorsLBTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B94E67A9F7E71A5B4989F5 /* Pods_EasyAnchorsLBTA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15B5923BEDDD84EC4CB9E414 /* Pods-EasyAnchorsLBTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyAnchorsLBTA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyAnchorsLBTA/Pods-EasyAnchorsLBTA.debug.xcconfig"; sourceTree = "<group>"; };
 		3D5ED66A20DF558B00F80818 /* EasyAnchorsLBTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyAnchorsLBTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5ED66D20DF558B00F80818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D5ED66F20DF558B00F80818 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		3D5ED67720DF558C00F80818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D5ED67920DF558C00F80818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D616FA920F6E9CC00C44E11 /* LearningController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningController.swift; sourceTree = "<group>"; };
+		862121C222F93CC736C6A6E5 /* Pods-EasyAnchorsLBTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyAnchorsLBTA.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyAnchorsLBTA/Pods-EasyAnchorsLBTA.release.xcconfig"; sourceTree = "<group>"; };
+		D4B94E67A9F7E71A5B4989F5 /* Pods_EasyAnchorsLBTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyAnchorsLBTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88CEF8CE00F853EA5DA1A69 /* Pods_EasyAnchorsLBTA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				3D5ED66C20DF558B00F80818 /* EasyAnchorsLBTA */,
 				3D5ED66B20DF558B00F80818 /* Products */,
+				5C9B94230153DA2CDEB94871 /* Pods */,
+				60206B363E31DBF65F77F60C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +65,30 @@
 			children = (
 				3D5ED66D20DF558B00F80818 /* AppDelegate.swift */,
 				3D5ED66F20DF558B00F80818 /* ViewController.swift */,
+				3D616FA920F6E9CC00C44E11 /* LearningController.swift */,
 				3D5ED67120DF558B00F80818 /* Main.storyboard */,
 				3D5ED67420DF558C00F80818 /* Assets.xcassets */,
 				3D5ED67620DF558C00F80818 /* LaunchScreen.storyboard */,
 				3D5ED67920DF558C00F80818 /* Info.plist */,
-				3D616FA920F6E9CC00C44E11 /* LearningController.swift */,
 			);
 			path = EasyAnchorsLBTA;
+			sourceTree = "<group>";
+		};
+		5C9B94230153DA2CDEB94871 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15B5923BEDDD84EC4CB9E414 /* Pods-EasyAnchorsLBTA.debug.xcconfig */,
+				862121C222F93CC736C6A6E5 /* Pods-EasyAnchorsLBTA.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		60206B363E31DBF65F77F60C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4B94E67A9F7E71A5B4989F5 /* Pods_EasyAnchorsLBTA.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D5ED67C20DF558C00F80818 /* Build configuration list for PBXNativeTarget "EasyAnchorsLBTA" */;
 			buildPhases = (
+				D1C4FD96B42F5CCCD47376C5 /* [CP] Check Pods Manifest.lock */,
 				3D5ED66620DF558B00F80818 /* Sources */,
 				3D5ED66720DF558B00F80818 /* Frameworks */,
 				3D5ED66820DF558B00F80818 /* Resources */,
+				FB7CFE3F2B91C1656D1C748E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D1C4FD96B42F5CCCD47376C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyAnchorsLBTA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB7CFE3F2B91C1656D1C748E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasyAnchorsLBTA/Pods-EasyAnchorsLBTA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyAnchorsLBTA/Pods-EasyAnchorsLBTA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D5ED66620DF558B00F80818 /* Sources */ = {
@@ -282,6 +347,7 @@
 		};
 		3D5ED67D20DF558C00F80818 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B5923BEDDD84EC4CB9E414 /* Pods-EasyAnchorsLBTA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +366,7 @@
 		};
 		3D5ED67E20DF558C00F80818 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 862121C222F93CC736C6A6E5 /* Pods-EasyAnchorsLBTA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
